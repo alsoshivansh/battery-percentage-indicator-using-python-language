@@ -1,0 +1,7 @@
+1. import psutil: This line imports the `psutil` module, which stands for "process and system utilities." It's a Python library used for retrieving information on system utilization (CPU, memory, disks, network, sensors, etc.).
+
+2. battery = psutil.sensors_battery(): This line uses the `psutil.sensors_battery()` function to get information about the battery status of your system. It returns an object representing the battery status.
+
+3. percentage = battery.percent: Here, we use the `percent` attribute of the `battery` object to extract the battery percentage level.
+
+4. print(f"Battery Percentage: {percentage}%"): Finally, we print out the battery percentage using a formatted string. The `{percentage}` placeholder is replaced with the actual value of the `percentage` variable, showing the battery percentage followed by a percentage symbol.
